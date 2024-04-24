@@ -1,9 +1,10 @@
 'use client'
 import type { Metadata } from 'next'
-import { Francois_One, Inter, Source_Code_Pro, Varela_Round } from 'next/font/google'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import { ThemeProvider, createTheme, Theme } from '@mui/material/styles';
+import { Francois_One} from 'next/font/google'
+import Header from '@/components/Header/Header';
+import Footer from '@/components/Footer/Footer'
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
 
 const francois = Francois_One({
   subsets: ['latin'],
@@ -34,7 +35,7 @@ export default function RootLayout({
 
       <body >
         <ThemeProvider theme={theme}>
-            <Navbar />
+            <Header />
           
           {children}
 

@@ -7,8 +7,8 @@ Container,
 Grid,
 Typography
 } from "@mui/material"
-import Banner from "@/components/Banner"
-import DetailCard from "@/components/DetailCard"
+import DetailCard from "@/components/Cards/DetailCard"
+import Banner from "@/components/Banners/Banner"
 
 
 export default function App() {

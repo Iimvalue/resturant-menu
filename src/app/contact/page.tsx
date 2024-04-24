@@ -1,10 +1,9 @@
-'use client'
+"use client";
 import { useState } from "react";
-import { TextField, Button, Typography, Grid, Box } from "@mui/material";
-import Banner from "@/components/Banner";
+import { TextField, Button, Grid, Box } from "@mui/material";
 import { useForm } from "react-hook-form";
-
-
+import Banner from "@/components/Banners/Banner";
+import Image from "next/image";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -12,19 +11,16 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const { register, handleSubmit } = useForm();
-  const onSubmit = (data: object) => console.log( data);
-
-
+  const { handleSubmit } = useForm();
+  const onSubmit = (data: object) => console.log(data);
 
   return (
-
     <Box
       sx={{
         height: "100%",
         mt: -1,
-
-      }}>
+      }}
+    >
       <Banner title="Contact us" backgroundColor="#eeeeee" />
       <Grid
         container
@@ -37,22 +33,19 @@ export default function Contact() {
           <Box
             sx={{
               p: 2,
-              mt:3
+              mt: 3,
             }}
           >
-
             <form onSubmit={handleSubmit(onSubmit)}>
               <Grid container spacing={2}>
                 <Grid item xs={12} md={6}>
                   <Box sx={{ display: "flex", justifyContent: "center" }}>
-                    <img
+                    <Image
                       src="/bg-contact.jpg"
                       alt="Contact"
-                      style={{
-                        width: "100%",
-                        height: "360px"
-
-                      }}
+                      width={500}
+                      height={500}
+                      style={{width:"100%"}}
                     />
                   </Box>
                 </Grid>
@@ -94,8 +87,8 @@ export default function Contact() {
                     sx={{
                       "&:focus": {
                         color: "orange",
-                        borderColor: "orange"
-                      }
+                        borderColor: "orange",
+                      },
                     }}
                   />
                   <Button
@@ -109,8 +102,8 @@ export default function Contact() {
                       height: "55px",
                       "&:hover": {
                         bgcolor: "#404142",
-                        color: "orange"
-                      }
+                        color: "orange",
+                      },
                     }}
                   >
                     Submit

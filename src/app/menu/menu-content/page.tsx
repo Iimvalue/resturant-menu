@@ -3,9 +3,9 @@
 import { Box, Button, Container, Divider, Grid, List, ListItem, ListItemText, Typography } from "@mui/material";
 import { Key, useEffect, useState } from "react";
 import Loading from "./laoding";
-import Banner from "@/components/Banner";
-import DetailCard from "@/components/DetailCard";
+import DetailCard from "@/components/Cards/DetailCard";
 import { useSearchParams } from 'next/navigation'
+import Banner from "@/components/Banners/Banner";
 
 
 
@@ -50,7 +50,7 @@ export default function MenuContentPage() {
         }
         else
             setItemSelected(itemSelectedFromMenu)
-    }, [itemSelected])
+    }, [itemSelected, itemSelectedFromMenu])
 
     if (!data.meals) return <Loading />
 

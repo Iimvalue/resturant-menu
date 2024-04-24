@@ -12,7 +12,7 @@ type CardProps = {
     href?: string | UrlObject
 }
 
-export default function Card1(props: CardProps) {
+export default function Cardd(props: CardProps) {
     const { img, title, href } = props
 
     return (

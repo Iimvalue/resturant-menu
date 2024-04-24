@@ -1,7 +1,8 @@
-import Cards from "@/components/Cards";
+import Cards from "@/components/Cards/Card";
 import Container from '@mui/material/Container'
 import { Grid } from "@mui/material";
-import Banner from "@/components/Banner";
+import Banner from "@/components/Banners/Banner";
+
 
 export default function MenuPage() {
 

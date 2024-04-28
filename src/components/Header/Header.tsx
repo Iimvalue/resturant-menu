@@ -63,7 +63,7 @@ export default function Header() {
           <Link
             key={count}
             href={`/${item.toLowerCase()}`}
-            style={{ color: "black" }}
+            style={{ color: "black", textDecoration:"none" }}
           >
             <ListItem key={item} disablePadding>
               <ListItemButton

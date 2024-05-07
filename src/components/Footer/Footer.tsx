@@ -51,10 +51,19 @@ export default function Footer() {
               Contact Us
             </Typography>
             <Typography variant="body2" color="white">
-              Email: a.saad.altami@gmail.com
+              Email:<br/>
+              <Link
+                href={"mailto:a.saad.altami@gmail.com"}
+                style={{ color: "inherit" }}
+              >
+                a.saad.altami@gmail.com
+              </Link>
             </Typography>
             <Typography variant="body2" color="white">
-              Phone: +966547826561
+              Phone:<br />
+              <Link href={"tel:+966547826561"} style={{ color: "inherit" }}>
+              +966547826561
+              </Link>
             </Typography>
             <Typography
               variant="body2"
